@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jabali e-Market</title>
+
+  <title>sumit</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">Jabali e-Market </h3>
+<p>Jabali, the e-market app, is poised to revolutionize the online shopping experience by offering a seamless platform for buyers and sellers alike. With a user-friendly interface and robust features, Jabali enables users to browse a diverse range of products, place orders securely, and make payments conveniently through popular methods like M-pesa and Airtel Money. Designed with mobile responsiveness in mind, Jabali ensures accessibility across various devices, catering to the evolving needs of modern consumers. Sellers can showcase their products with detailed listings, attracting potential buyers with compelling descriptions and high-quality images. With a commitment to customer satisfaction, Jabali provides responsive support channels and fosters a culture of feedback-driven improvement. Through strategic marketing efforts and continuous iteration, Jabali aims to become the go-to destination for online shopping, delivering value and convenience to users in its target market.</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
