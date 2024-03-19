@@ -450,7 +450,7 @@ def my_order_view(request):
 
 
 
-#--------------for discharge patient bill (pdf) download and printing
+#--------------for customer bill (pdf) download and printing
 import io
 from xhtml2pdf import pisa
 from django.template.loader import get_template
