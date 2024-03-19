@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  background-color:#8c9eff;
+  background-color:#f2f2f2;
 }
 
 .page-wrapper {
@@ -308,9 +308,9 @@ body {
   </style>
 
 {%if products%}
-<h3 style="text-align:center; color:yellow;">{{word}}</h3>
+<h3 style="text-align:center; color:black;">{{word}}</h3>
 <br>
-<!-- products data starttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
+<!-- products data start -->
   <div class="row">
 
       {% for p in products %}
@@ -337,7 +337,7 @@ body {
                 </div>
 
                 <a class="cart" href="{% url 'add-to-cart' p.id  %}">
-                  <span class="price">₹ {{p.price}}</span>
+                  <span class="price">Kshs {{p.price}}</span>
                   <span class="add-to-cart">
                     <span class="txt">Add in cart</span>
                   </span>
@@ -358,9 +358,9 @@ body {
 {% endif %}
   {% endfor %}
 </div>
-<!-- products data enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+<!-- products data end -->
 {%else%}
-<h3 style="text-align:center; color:yellow;">No Search Found</h3>
+<h3 style="text-align:center; color:black;">No Search Found</h3>
 {%endif%}
 
 <script>
